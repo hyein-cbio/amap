@@ -107,6 +107,14 @@ namespace hclust_T
     
     ncl=*n;
     inf= 1e20;
+
+    if (*iopt == WARDD2)
+      {
+      for ( i=0; i<*len; i++)
+        {
+        diss[i] = pow(diss[i], 2);
+        }
+      }
     
     /*
      * Carry out an agglomeration - first create list of NNs
@@ -161,6 +169,12 @@ namespace hclust_T
 	j2=MAX (im,jm);
 	ia[*n-ncl-1]=i2+1;
 	ib[*n-ncl-1]=j2+1;
+
+  if (*iopt == WARDD2)
+    {
+    dmin = sqrt(dmin);
+    }
+
 	crit[*n-ncl-1]=dmin;
 	
 	
@@ -316,6 +330,17 @@ namespace hclust_T
 				  (membr[i2] + membr[j2]) ) /
 		      (membr[i2] + membr[j2]);
 		    break;
+		    /*
+		     * WARDD2'S MINIMUM VARIANCE METHOD - IOPT=9.
+		     */	      
+		  case WARDD2: 
+		    {
+		      diss[ind1] = (membr[i2]+membr[k])* diss[ind1] + 
+			(membr[j2]+membr[k])* diss[ind2] - 
+			membr[k] * xx;
+		      diss[ind1] = diss[ind1] / x;
+		      break; 
+		    }
 		  } /* end switch */
 					
 	

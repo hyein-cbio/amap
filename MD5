@@ -8,7 +8,7 @@ cecc24888d4ff760b46111ed6a0a3fa7 *R/acprob.R
 96c149c0e68331643ff09c695c7c931e *R/burt.R
 840308485d4b9e57ff7807872333f374 *R/diss.R
 81e76ff58e0445d57ea446ed81e30284 *R/dist.R
-94956050884b1b8c5d0edeacfb45b469 *R/hcluster.R
+ecc868d5a54c3753353a2a9c00545b58 *R/hcluster.R
 e4aa724df4d3b29253d77c03e293fe97 *R/pop.R
 4a883e195ca77e0b96c1074e374b78c4 *build/vignette.rds
 364a43413a10df0ffe981f35aeddf37f *cleanup
@@ -49,8 +49,8 @@ bf8a862477275a5dd74f95a838688400 *man/pop.Rd
 734dfd8a1d348d68ce7bdb61ed135a6f *src/distance_T.h.h
 37aa2ae8966ad80a389c519d22de0fcb *src/hclust.cpp
 2b7cecb079de38b10f21504f64a04fb7 *src/hclust.h
-b8ddd602381bdc2611e1333559995c15 *src/hclust_T.h
-3a86e75052c29598c5cb883afcd41ba7 *src/hclust_T.h.h
+55590848f8e27fa9370a6a23dbbbf786 *src/hclust_T.h
+891e322c7a7c041e7962d670f222daa8 *src/hclust_T.h.h
 d1d5ebf1ebaaeff126b32a8a43c4f2a3 *src/init.c
 d5cb712175f94b8943fe835c9c88547e *src/kmeans.cpp
 863538393c686c98fdc9e9c297bf4513 *src/kmeans.h

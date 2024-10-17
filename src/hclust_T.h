@@ -8,7 +8,7 @@ namespace hclust_T
 {
 
 
-  enum {WARD=1,SINGLE,COMPLETE,AVERAGE,MCQUITTY,MEDIAN,CENTROID,CENTROID2};
+  enum {WARD=1,SINGLE,COMPLETE,AVERAGE,MCQUITTY,MEDIAN,CENTROID,CENTROID2,WARDD2};
 
 
   template <class T> void hcluster(double *x, int *nr, int *nc, 
